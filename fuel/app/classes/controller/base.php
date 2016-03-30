@@ -1,6 +1,6 @@
 <?php
 
-class Controller_Base extends Controller_Template
+abstract class Controller_Base extends Controller_Template
 {
 	protected $TITLE = '';
 
