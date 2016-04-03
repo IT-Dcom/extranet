@@ -36,5 +36,8 @@ Vagrant.configure(2) do |config|
     bundle install
 
     curl get.fuelphp.com/oil | sh
+
+    echo "alias servup='oil s -h=\"0.0.0.0\"'" >> /home/vagrant/.bashrc
+    echo "alias watchsass='sass --watch /vagrant/fuel/app/assets/sass:/vagrant/public/assets/css'"
   SHELL
 end
