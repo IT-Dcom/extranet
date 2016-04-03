@@ -34,3 +34,5 @@ desktop.ini
 
 # vagrant files
 /.vagrant/**/*
+
+/.sass-cache/**/*
