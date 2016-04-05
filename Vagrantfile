@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :private_network, ip: "192.168.50.4"
 
   config.vm.network :forwarded_port, guest: 8000,  host: 8000 #rails server
-  config.vm.network :forwarded_port, guest: 5432,  host: 5432 #postgre
+
   if defined?(VagrantVbguest::Middleware)
     config.vbguest.auto_update = false
   end
@@ -19,14 +19,9 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     sudo locale-gen fr_FR.UTF-8
-    sudo apt-get install -y postgresql-9.3 postgresql-9.3-dbg php5
-    sudo -i -u postgres psql -c "CREATE ROLE vagrant;"
-    sudo -i -u postgres psql -c "ALTER ROLE vagrant WITH SUPERUSER;"
-    sudo -i -u postgres psql -c "CREATE DATABASE livogis_dev;"
-    sudo -i -u postgres psql -c "CREATE DATABASE livogis_test;"
-    sudo -i -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE livogis_dev TO vagrant;"
+    sudo apt-get install -y php5 mysql-client php5-mysql
 
-    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 || curl -sSL https://rvm.io/mpapis.asc | gpg --import -
     curl -sSL https://get.rvm.io | bash -s stable --ruby
 
     source /home/vagrant/.rvm/scripts/rvm
@@ -38,6 +33,6 @@ Vagrant.configure(2) do |config|
     curl get.fuelphp.com/oil | sh
 
     echo "alias servup='oil s -h=\"0.0.0.0\"'" >> /home/vagrant/.bashrc
-    echo "alias watchsass='sass --watch /vagrant/fuel/app/assets/sass:/vagrant/public/assets/css'"
+    echo "alias watchsass='sass --watch /vagrant/fuel/app/assets/sass:/vagrant/public/assets/css'" >> /home/vagrant/.bashrc
   SHELL
 end
