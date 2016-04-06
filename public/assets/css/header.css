@@ -1,11 +1,16 @@
-body {
-  margin-top: 64px; }
-
+@font-face {
+  font-family: Marker;
+  src: local("PermanentMarker"); }
 .livogis-title {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: Marker;
+  color: #d9d9d9; }
 
 .livogis-img {
   margin: 5px;
   height: 40px; }
+
+.navbar-right > a {
+  color: #0fbd6a; }
 
 /*# sourceMappingURL=header.css.map */

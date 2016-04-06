@@ -5,15 +5,16 @@
     <body>
         <?php echo $header; ?>
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-2 sidebar">
+          <div class="row livogis-page">
+            <div class="col-lg-2 sidebar">
               <?php echo $navbar; ?>
             </div>
-            <div class="col-md-offset-2 col-md-10">
+            <div class="col-lg-offset-2 col-lg-10
+                        col-md-12 content">
               <?php echo $content; ?>
             </div>
           </div>
+          <?php echo $footer; ?>
         </div>
-        <?php echo $footer; ?>
     </body>
 </html>
