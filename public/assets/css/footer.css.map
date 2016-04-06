@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";EACE,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,wBAAwB;ACA/B,OAAO;EACL,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,GAAG",
+"sources": ["../../../fuel/app/assets/sass/_data.sass","../../../fuel/app/assets/sass/footer.sass"],
+"names": [],
+"file": "footer.css"
+}
