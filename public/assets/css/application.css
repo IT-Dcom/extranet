@@ -2,7 +2,8 @@
   font-family: Marker;
   src: local("PermanentMarker"); }
 body {
-  margin-top: 64px; }
+  margin-top: 64px;
+  margin-bottom: 64px; }
 
 .livogis-page {
   margin-right: 0px;
