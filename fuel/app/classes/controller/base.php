@@ -17,6 +17,7 @@ abstract class Controller_Base extends Controller_Template
 			$this->template->head->title = $this->TITLE;
 
 			$this->template->header = View::forge('layouts/header');
+			$this->template->navbar = View::forge('layouts/navbar');
 
 			$this->template->footer = View::forge('layouts/footer');
 			$this->template->footer->title = $this->TITLE;
