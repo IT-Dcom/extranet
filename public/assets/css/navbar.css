@@ -28,13 +28,13 @@
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
   color: #fff;
-  background-color: #0fbd6a; }
+  background-color: #0fbdab; }
 
 .livogis-nav-ico {
   font-size: 16px; }
 
 .nav-sidebar > li > a {
-  color: #0fbd6a; }
+  color: #0fbdab; }
   .nav-sidebar > li > a > .livogis-hidden-md {
     display: inline; }
     @media screen and (max-width: 1199px) {

@@ -3,6 +3,7 @@
 class Controller_Home extends Controller_Base
 {
   protected $TITLE = 'Home';
+  protected $SUBTITLE = 'Tableau de bord';
 
   /**
   * The basic welcome message

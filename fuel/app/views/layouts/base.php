@@ -11,7 +11,10 @@
             </div>
             <div class="col-lg-offset-2 col-lg-10
                         col-md-12 content">
-              <?php echo $content; ?>
+              <h2><?php echo $subtitle ?></h2>
+              <div class="livogis-content">
+                <?php echo $content; ?>
+              </div>
             </div>
           </div>
           <?php echo $footer; ?>
