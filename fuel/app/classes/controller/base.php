@@ -3,6 +3,7 @@
 abstract class Controller_Base extends Controller_Template
 {
 	protected $TITLE = '';
+	protected $SUBTITLE = '';
 
 	public $template = 'layouts/base';
 
@@ -21,6 +22,8 @@ abstract class Controller_Base extends Controller_Template
 
 			$this->template->footer = View::forge('layouts/footer');
 			$this->template->footer->title = $this->TITLE;
+
+			$this->template->subtitle = $this->SUBTITLE;
   }
 
 	/**
