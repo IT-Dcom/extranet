@@ -1,9 +1,9 @@
 <div class="row">
-	<div class="col-xs-6">
+	<div class="col-sm-6 col-xs-12">
 		<p> Derniers paquets </p>
 		<div id="paquets" class="livogis-chart"></div>
 	</div>
-	<div class="col-xs-6">
+	<div class="col-sm-6 col-xs-12">
 		<p> État du stock </p>
 		<div id="stock" class="livogis-chart"></div>
 	</div>
