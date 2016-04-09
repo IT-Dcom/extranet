@@ -25,7 +25,7 @@
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="/colis/new">
       <span class="livogis-hidden-md">Enregistrer des colis</span>
       <span class="pull-right glyphicon
                    glyphicon-log-in livogis-nav-ico">
