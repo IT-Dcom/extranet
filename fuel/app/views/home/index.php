@@ -1,22 +1,22 @@
-<div class="row">
-	<div class="col-sm-6 col-xs-12">
+<div class='row'>
+	<div class='col-sm-6 col-xs-12'>
 		<p> Derniers paquets </p>
-		<div id="paquets" class="livogis-chart"></div>
+		<div id='paquets' class='livogis-chart'></div>
 	</div>
-	<div class="col-sm-6 col-xs-12">
+	<div class='col-sm-6 col-xs-12'>
 		<p> État du stock </p>
-		<div id="stock" class="livogis-chart"></div>
+		<div id='stock' class='livogis-chart'></div>
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-xs-12">
+<div class='row'>
+	<div class='col-xs-12'>
 		<p> Activité </p>
-		<div id="action" class="livogis-chart"></div>
+		<div id='action' class='livogis-chart'></div>
 	</div>
 </div>
 
-<script type="text/javascript">
+<script type='text/javascript'>
 $(function () {
     $('#paquets').highcharts({
         title: {
@@ -58,7 +58,7 @@ $(function () {
 });
 </script>
 
-<script type="text/javascript">
+<script type='text/javascript'>
 $(function () {
     $('#stock').highcharts({
         title: {
@@ -100,7 +100,7 @@ $(function () {
 });
 </script>
 
-<script type="text/javascript">
+<script type='text/javascript'>
 $(function () {
     $('#action').highcharts({
         title: {
