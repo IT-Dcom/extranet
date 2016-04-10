@@ -17,7 +17,7 @@
     </a>
   </li>
   <li>
-    <a href='#'>
+    <a href='/colis'>
       <span class='livogis-hidden-md'>Gestion colis</span>
       <span class='pull-right glyphicon
                    glyphicon-folder-close livogis-nav-ico'>
