@@ -18,10 +18,10 @@
         Livogis
       </a>
     </div>
-    <div style='height: 1px;' aria-expanded='false' id='navbar'
-         class='navbar-collapse collapse'>
-      <div class='nav navbar-right'>
-        <a href='#'>Lairan Alexandre <?php echo Asset::img('avatar64.png', array('class' => 'livogis-img')) ?></a>
+    <div style="height: 1px;" aria-expanded="false" id="navbar"
+         class="navbar-collapse collapse">
+      <div class="nav navbar-right">
+        <a href="/user/profil">Lairan Alexandre <?php echo Asset::img('avatar64.png', array('class' => 'livogis-img')) ?></a>
       </div>
     </div>
   </div>
