@@ -1,7 +1,7 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-<title><?php echo "Livogis " . $title; ?></title>
+<title><?php echo 'Livogis ' . $title; ?></title>
 <?php
   echo Asset::css(array('bootstrap.min.css', 'header.css', 'navbar.css',
                         'footer.css', 'application.css',
