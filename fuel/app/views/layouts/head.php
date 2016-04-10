@@ -4,7 +4,7 @@
 <title><?php echo 'Livogis ' . $title; ?></title>
 <?php
   echo Asset::css(array('bootstrap.min.css', 'header.css', 'navbar.css',
-                        'footer.css', 'application.css',
+                        'footer.css', 'application.css', 'font-awesome.min.css',
                         'bootstrap-datetimepicker.min.css'));
 
   echo Asset::js (array('jquery-2.2.3.min.js', 'bootstrap.min.js',
