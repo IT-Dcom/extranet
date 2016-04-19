@@ -1,23 +1,21 @@
-<h3><strong>Les colis dans votre stock</strong></h3>
+<h3>Les colis dans votre stock</h3>
 
 <table class="table table-striped">
   <tr>
     <th>id</th>
     <th>name</th>
-    <th>Destination</th>
     <th>Client</th>
   </tr>
-	<?php foreach ($users as $user) { ?>
+  <?php foreach ($colis as $coli) { ?>
 		<tr>
-	    <td><?php echo $user['ID']?></td>
-	    <td><?php echo $user['Name']?></td>
-	    <td><?php echo $user['Town']?></td>
-	    <td><?php echo $user['Client']?></td>
+	    <td><?php echo $coli['id']?></td>
+	    <td><?php echo $coli['name']?></td>
+	    <td><?php echo $coli['client']['name']?></td>
 		</tr>
 	<?php } ?>
 </table>
 
-<h3><strong>Les colis récemment sortis du stock</strong></h3>
+<h3>Les colis récemment sortis du stock</h3>
 <table class="table table-striped">
   <tr>
     <th>id</th>
@@ -25,12 +23,12 @@
     <th>Destination</th>
     <th>Client</th>
   </tr>
-	<?php foreach ($users as $user) { ?>
+	<?php foreach ($colis as $coli) { ?>
 		<tr>
-	    <td><?php echo $user['ID']?></td>
-	    <td><?php echo $user['Name']?></td>
-	    <td><?php echo $user['Town']?></td>
-	    <td><?php echo $user['Client']?></td>
+      <td><?php echo $coli['id']?></td>
+	    <td><?php echo $coli['name']?></td>
+	    <td>MISSION RELAY POINT ADDRESS</td>
+	    <td><?php echo $coli['client']['name']?></td>
 		</tr>
 	<?php } ?>
 </table>
