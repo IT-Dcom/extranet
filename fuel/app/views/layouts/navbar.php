@@ -1,5 +1,13 @@
 <ul class='nav nav-sidebar'>
-  <li class='active'>
+  <?php foreach($elements as $element) { ?>
+    <li class='<?php echo $element ? 'active' : ''; ?>'
+      <span class='livogis-hidden-md'><?php echo $element['title'] ?></span>
+      <span class='pull-right glyphicon livogis-nav-ico
+                   glyphicon-<?php echo $element['icon'] ?>'>
+      </span>
+    </li>
+  <?php } ?>
+  <!-- <li class='active'>
     <a href='/'>
       <span class='livogis-hidden-md'>Accueil</span>
       <span class='pull-right glyphicon
@@ -46,5 +54,5 @@
                    glyphicon-euro livogis-nav-ico'>
       </span>
     </a>
-  </li>
+  </li> -->
 </ul>
