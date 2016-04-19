@@ -2,7 +2,6 @@
   <li class='active'>
     <a href='/'>
       <span class='livogis-hidden-md'>Accueil</span>
-      <span class='sr-only'>(current)</span>
       <span class='pull-right glyphicon
                    glyphicon-home livogis-nav-ico'>
       </span>
@@ -33,8 +32,8 @@
     </a>
   </li>
   <li>
-    <a href='#'>
-      <span class='livogis-hidden-md'>Suivit du stock</span>
+    <a href='/stock'>
+      <span class='livogis-hidden-md'>Suivi du stock</span>
       <span class='pull-right glyphicon
                    glyphicon-folder-open livogis-nav-ico'>
       </span>
