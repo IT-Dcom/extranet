@@ -1,4 +1,5 @@
 <?php
+use \Model\NewColis;
 
 class Controller_Colis extends Controller_Base
 {
@@ -16,6 +17,17 @@ class Controller_Colis extends Controller_Base
   {
     $this->template->subtitle = 'Nouveau Colis';
     $this->template->content = View::forge('colis/new');
+  }
+
+  public function post_create()
+  {
+    //$destination = $_POST['destination'];
+
+      $this->template->subtitle = 'Nouveau Colis';
+      $this->template->content = View::forge('colis/colisok');
+    //$date = $_POST['date'];
+    //$colis = $_POST['colis'];
+    //NewColis->insert($colis, 0, 0); // a reconfigurer par rapport aux tables product
   }
 
   public function action_index()

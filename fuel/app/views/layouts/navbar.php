@@ -9,7 +9,7 @@
     </a>
   </li>
   <li>
-    <a href='#'>
+    <a href='/client'>
       <span class='livogis-hidden-md'>Compte client</span>
       <span class='pull-right glyphicon
                    glyphicon-user livogis-nav-ico'>
