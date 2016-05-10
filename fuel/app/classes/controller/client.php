@@ -8,6 +8,7 @@ class Controller_Client extends Controller_Base
   public function action_index()
   {
     $this->template->subtitle = 'Gestion client';
+    $this->template->content = View::forge('client/index');
   }
 
   public function action_create()
