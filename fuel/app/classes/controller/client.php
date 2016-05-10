@@ -8,13 +8,12 @@ class Controller_Client extends Controller_Base
   public function action_index()
   {
     $this->template->subtitle = 'Gestion client';
-    $this->template->content = View::forge('client/index');
   }
 
   public function action_create()
   {
       $this->template->subtitle = 'Création d\'un client';
-      $this->template->content = View::forge('client/createclient');
+      $this->template->content = View::forge('client/index');
   }
   public function post_create()
   {
@@ -33,7 +32,7 @@ class Controller_Client extends Controller_Base
     {
         $email = $_POST['email'];
         $this->template->subtitle = 'Informations client';
-        $results = searchclient::search($email);
+        $results = searchclient::find_by_email($email);
         $this->template->content = View::forge('client/show', $results);
     }
 }

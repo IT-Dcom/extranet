@@ -1,7 +1,7 @@
 <?php echo Form::open('client/show'); ?>
 <?php echo Form::input('email', null,
                        array('placeholder' => 'Email du client',
-                             'class' => 'form-control'));
+                       'class' => 'form-control'));
 ?>
 <br>
 <br>
