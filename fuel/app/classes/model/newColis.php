@@ -4,7 +4,7 @@ namespace Model;
 
 class NewColis extends \Model {
 
-    public static function insert($name, $weight, $condition)
+    public static function create($name, $weight, $condition)
     {
       // insertion
     }

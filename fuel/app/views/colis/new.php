@@ -88,7 +88,7 @@
         'class' => 'form-control'));
         ?>
       </div>
-      <button type='submit' class='btn btn-default'>Valider</button>
+      <button class='btn btn-default'>Valider</button>
     </div>
   </div>
 <?php echo Form::close(); ?>
