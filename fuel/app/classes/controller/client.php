@@ -14,16 +14,18 @@ class Controller_Client extends Controller_Base
   public function action_create()
   {
       $this->template->subtitle = 'Création d\'un client';
-      $this->template->content = View::forge('client/index');
-  }
-  public function post_create()
-  {
-    $this->template->content = View::forge('client/clientok');
+      $this->template->content = View::forge('client/createclient');
   }
   public function post_backhome()
   {
       $this->template->content = View::forge('home/index');
   }
+
+  public function post_clientok()
+  {
+        $this->template->content = View::forge('client/clientok');
+  }
+
   public function action_show()
   {
       $this->template->subtitle = 'Informations client';

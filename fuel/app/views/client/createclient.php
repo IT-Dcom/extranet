@@ -1,4 +1,4 @@
-<?php echo Form::open('/client/create'); ?>
+<?php echo Form::open('/client/clientok'); ?>
 <div class='row'>
   <div class='col-sm-6'>
     <div class='form-group' id='clientinput'>
@@ -23,8 +23,7 @@
   </div>
 </div>
 <br>
-<button type='submit'>
-Créer
-</button>
+
+<button action="clientok" methode='post' type='submit' class="btn btn-success">Créer un compte client</button>
 
 <?php echo Form::close(); ?>

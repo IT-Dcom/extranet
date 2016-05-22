@@ -1,4 +1,8 @@
-<?php echo Form::open('colis/create'); ?>
+<?php
+ echo $erreur;
+ echo "<br>";
+ echo Form::open('colis/create');
+ ?>
   <div class='row'>
     <div class='col-sm-6'>
       <div class='form-group'>
@@ -35,7 +39,10 @@
   <div class='col-sm-6'>
     <div class='input-group' id='insurancebox'>
       <label>
-        <input type="checkbox"> Avec assurance
+          <?php echo Form::input('assurance', null,
+                               array('type' => 'checkbox',
+                                     'class' => 'form-control')); ?>
+         Avec assurance
       </label>
     </div>
   </div>
@@ -54,7 +61,7 @@
 <div class='col-sm-6'>
   <div class='form-group' id='adressinput'>
     <?php echo Form::input('adress', null,
-                         array('placeholder' => 'Adresse du client',
+                         array('placeholder' => '48 avenue Libole Annecy 73550',
                                'class' => 'form-control'));
                                ?>
 </div>
@@ -74,7 +81,7 @@
 <div class='col-sm-6'>
   <div class='form-group' id='adresstargetinput'>
     <?php echo Form::input('adresstarget', null,
-                         array('placeholder' => 'Adresse du destinataire',
+                         array('placeholder' => '1 rue kalive Paris 75009',
                                'class' => 'form-control'));
                                ?>
 </div>
