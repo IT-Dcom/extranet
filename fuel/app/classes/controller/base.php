@@ -56,10 +56,6 @@ abstract class Controller_Base extends Controller_Template
 		$this->navbar[] = array('href' => '/colis', 'title' => 'Gestion colis',
 														'icon' => 'folder-close');
 
-		$this->navbar[] = array('href' => '/colis/new',
-														'title' => 'Enregistrer des colis',
-														'icon' => 'log-in');
-
 		$this->navbar[] = array('href' => '/stock', 'title' => 'Suivi du stock',
 														'icon' => 'folder-open');
 
