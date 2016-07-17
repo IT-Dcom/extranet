@@ -10,5 +10,5 @@
   echo Asset::js (array('jquery-2.2.3.min.js', 'bootstrap.min.js',
                         'highcharts.js', 'modules/exporting.js',
                         'modules/boost.js', 'moment.min.js',
-                        'bootstrap-datetimepicker.min.js'));
+                        'bootstrap-datetimepicker.min.js', 'application.js'));
 ?>

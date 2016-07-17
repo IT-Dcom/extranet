@@ -6,5 +6,8 @@ return array(
 	'colis'  => 'colis/index',
 
 	'user/profil' => 'user/profil',
-	// exemple: 'index(/:name)?' => array('home/index'),
+
+	// API
+	'api/colis' => 'api/colis/index',
+	'api/colis/new' => 'api/colis/create'
 );
